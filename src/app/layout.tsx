@@ -1,3 +1,4 @@
+import Navbar from "@/components/customs/Navbar";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
@@ -23,7 +24,8 @@ export default function RootLayout({
           manrope.variable
         )}
       >
-        {children}
+        <Navbar />
+        <main>{children}</main>
       </body>
     </html>
   );
